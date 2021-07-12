@@ -7,13 +7,17 @@ This is based on ongoing JSON-LD work: <https://github.com/hardistyar/openDS/blo
 
 Create the ontology:
 
-```python create_ods_ont.py```
+```python
+python create_ods_ont.py
+```
 
 Provides an
 
-ods.owl
+```ods.owl```
 
-which is currently converted to JSON-LD with protege (output can pretty printed with a onliner)
+file, which is currently converted to JSON-LD with protege (output can pretty printed with a onliner)
 
-```python format_ods.py ods.json.owl > ods.json```
+```python
+python format_ods.py ods.json.owl > ods.json
+```
 
