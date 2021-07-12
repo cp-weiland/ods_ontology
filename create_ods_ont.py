@@ -33,7 +33,7 @@ with ods_ont:
 
     class modified(dc.modified) :
         domain = [DigitalSpecimen]
-        range = [dc.date]
+        range = [str]
 
     class name(dwc.scientificName, owlr.DataProperty):
         domain = [DigitalSpecimen]
@@ -53,7 +53,7 @@ with ods_ont:
 
     class institution(owlr.ObjectProperty):
         domain = [DigitalSpecimen]
-
+        range = [obo.IAO_0020000]
         
 if __name__ == "__main__":
     ods_ont.save("ods.owl", format="ntriples")
