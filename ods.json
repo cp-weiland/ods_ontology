@@ -1,0 +1,147 @@
+[
+    {
+        "@id": "http://github.com/hardistyar/openDS/ods-ontology/terms",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Ontology"
+        ]
+    },
+    {
+        "@id": "http://github.com/hardistyar/openDS/ods-ontology/terms/DigitalSpecimen",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "http://purl.obolibrary.org/obo/IAO_0000030"
+            }
+        ]
+    },
+    {
+        "@id": "http://github.com/hardistyar/openDS/ods-ontology/terms/institution",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://github.com/hardistyar/openDS/ods-ontology/terms/DigitalSpecimen"
+            }
+        ]
+    },
+    {
+        "@id": "http://github.com/hardistyar/openDS/ods-ontology/terms/materialType",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#DatatypeProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://github.com/hardistyar/openDS/ods-ontology/terms/DigitalSpecimen"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.w3.org/2001/XMLSchema#string"
+            }
+        ]
+    },
+    {
+        "@id": "http://github.com/hardistyar/openDS/ods-ontology/terms/midsLevel",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#DatatypeProperty",
+            "http://www.w3.org/2002/07/owl#FunctionalProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://github.com/hardistyar/openDS/ods-ontology/terms/DigitalSpecimen"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.w3.org/2001/XMLSchema#integer"
+            }
+        ]
+    },
+    {
+        "@id": "http://github.com/hardistyar/openDS/ods-ontology/terms/modified",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty",
+            "http://www.w3.org/2002/07/owl#DatatypeProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://github.com/hardistyar/openDS/ods-ontology/terms/DigitalSpecimen"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://purl.org/dc/terms/date"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+            {
+                "@id": "http://purl.org/dc/terms/modified"
+            }
+        ]
+    },
+    {
+        "@id": "http://github.com/hardistyar/openDS/ods-ontology/terms/name",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#DatatypeProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://github.com/hardistyar/openDS/ods-ontology/terms/DigitalSpecimen"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.w3.org/2001/XMLSchema#string"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+            {
+                "@id": "http://rs.tdwg.org/dwc/terms/scientificName"
+            }
+        ]
+    },
+    {
+        "@id": "http://github.com/hardistyar/openDS/ods-ontology/terms/physicalSpecimenId",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#DatatypeProperty",
+            "http://www.w3.org/2002/07/owl#FunctionalProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://github.com/hardistyar/openDS/ods-ontology/terms/DigitalSpecimen"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.w3.org/2001/XMLSchema#string"
+            }
+        ]
+    },
+    {
+        "@id": "http://purl.obolibrary.org/obo/IAO_0000030",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ]
+    },
+    {
+        "@id": "http://purl.org/dc/terms/date",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ]
+    },
+    {
+        "@id": "http://purl.org/dc/terms/modified",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#DatatypeProperty"
+        ]
+    },
+    {
+        "@id": "http://rs.tdwg.org/dwc/terms/scientificName",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#DatatypeProperty"
+        ]
+    }
+]
